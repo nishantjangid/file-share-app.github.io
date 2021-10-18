@@ -84,6 +84,7 @@ const uploadFile = () => {
     }
 
     xhr.open("POST",uploadURL);
+    xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
     xhr.send(formData);
 };
 
